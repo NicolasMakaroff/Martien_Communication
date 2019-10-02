@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Projet_IPF" rel="Chapter" href="Projet_IPF.html"><title>Projet_IPF</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Projet_IPF.html">Projet_IPF</a></h1>
+<pre><span class="keyword">module</span> Projet_IPF: <code class="code">sig</code> <a href="Projet_IPF.html">..</a> <code class="code">end</code></pre><code class="code">distance_espace ()</code> donne la distance d'un caractère au caractère espace set à 64<br>
+<b>Returns</b> un int la distance<br>
+<hr width="100%">
+<pre><span id="VALdistance_espace"><span class="keyword">val</span> distance_espace</span> : <code class="type">char -> int</code></pre><pre><span id="VALdistance"><span class="keyword">val</span> distance</span> : <code class="type">char -> char -> int</code></pre><div class="info">
+<code class="code">distance ()</code> retourne la distance entre deux caractères<br>
+<b>Returns</b> un int la distance<br>
+</div>
+<pre><span id="VALdistanceAll"><span class="keyword">val</span> distanceAll</span> : <code class="type">char -> char -> int</code></pre><div class="info">
+<code class="code">distanceAll</code> renvoie la distance entre deux char qui peuvent être aussi l'espace<br>
+<b>Returns</b> un int la distance<br>
+</div>
+<pre><span id="VALdistance3"><span class="keyword">val</span> distance3</span> : <code class="type">char -> int</code></pre><div class="info">
+<code class="code">distance3</code> la distance a l'espace avec le char qui peut être l'espace<br>
+<b>Returns</b> un int la distance<br>
+</div>
+<pre><code><span id="TYPEantenne"><span class="keyword">type</span> <code class="type"></code>antenne</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTantenne.num">num</span>&nbsp;:<code class="type">char list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTantenne.pos">pos</span>&nbsp;:<code class="type">char</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTantenne.dis">dis</span>&nbsp;:<code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info">
+<code class="code">antenne</code> création d'un type antenne qui comprend un nom, une positon courante et la distance au prochain caractère à atteindre<br>
+</div>
+
+<pre><span id="VALinsert_dis"><span class="keyword">val</span> insert_dis</span> : <code class="type"><a href="Projet_IPF.html#TYPEantenne">antenne</a> -> int -> <a href="Projet_IPF.html#TYPEantenne">antenne</a></code></pre><div class="info">
+<code class="code">insert_dis ()</code> insert la distance dans une antenne<br>
+<b>Returns</b> une antenne<br>
+</div>
+<pre><span id="VALinsert_pos"><span class="keyword">val</span> insert_pos</span> : <code class="type"><a href="Projet_IPF.html#TYPEantenne">antenne</a> -> char -> <a href="Projet_IPF.html#TYPEantenne">antenne</a></code></pre><div class="info">
+<code class="code">insert_pos()</code> insert une position dans une antenne<br>
+<b>Returns</b> une antenne<br>
+</div>
+<pre><span id="VALmin_antenne"><span class="keyword">val</span> min_antenne</span> : <code class="type"><a href="Projet_IPF.html#TYPEantenne">antenne</a> -> <a href="Projet_IPF.html#TYPEantenne">antenne</a> -> <a href="Projet_IPF.html#TYPEantenne">antenne</a></code></pre><div class="info">
+<code class="code">min ()</code> retourne l'antenne minimum selon la distance<br>
+<b>Returns</b> une antenne<br>
+</div>
+<pre><span id="VALmin_antenne_liste"><span class="keyword">val</span> min_antenne_liste</span> : <code class="type"><a href="Projet_IPF.html#TYPEantenne">antenne</a> list -> <a href="Projet_IPF.html#TYPEantenne">antenne</a></code></pre><div class="info">
+<code class="code">min_liste()</code> retourne le min d'une liste d'antenne<br>
+<b>Returns</b> une antenne<br>
+</div>
+<pre><span id="VALset_distance"><span class="keyword">val</span> set_distance</span> : <code class="type"><a href="Projet_IPF.html#TYPEantenne">antenne</a> list -> char -> <a href="Projet_IPF.html#TYPEantenne">antenne</a> list</code></pre><div class="info">
+<code class="code">set_distance ()</code> ajoute la distance dans chaque antenne d'une liste par rapport à un caractère<br>
+<b>Returns</b> une liste d'antenne<br>
+</div>
+<pre><span id="VALmodifier_antenne"><span class="keyword">val</span> modifier_antenne</span> : <code class="type">char list -> char -> <a href="Projet_IPF.html#TYPEantenne">antenne</a> -> <a href="Projet_IPF.html#TYPEantenne">antenne</a></code></pre><div class="info">
+<code class="code">modifier ()</code> modifie la pos d'une antenne si elle a le bonne identifiant<br>
+<b>Returns</b> une antenne<br>
+</div>
+<pre><span id="VALmodifier_liste"><span class="keyword">val</span> modifier_liste</span> : <code class="type"><a href="Projet_IPF.html#TYPEantenne">antenne</a> list -> char list -> char -> <a href="Projet_IPF.html#TYPEantenne">antenne</a> list</code></pre><div class="info">
+<code class="code">modifier_liste</code> applique la fonction précédent à une liste d'antenne<br>
+<b>Returns</b> une liste d'antenne<br>
+</div>
+<pre><span id="VALecrire_antenne"><span class="keyword">val</span> ecrire_antenne</span> : <code class="type">int -> char list</code></pre><div class="info">
+<code class="code">ecrire()</code> ecrit l'id d'une antenne sous la forme d'une char list<br>
+<b>Returns</b> char list<br>
+</div>
+<pre><span id="VALinit_liste_antenne"><span class="keyword">val</span> init_liste_antenne</span> : <code class="type">int -> int -> <a href="Projet_IPF.html#TYPEantenne">antenne</a> list</code></pre><div class="info">
+<code class="code">init_liste ()</code> creer une liste d'antenne sur la donnée de leur nombre<br>
+<b>Returns</b> une liste d'antenne<br>
+</div>
+<pre><span id="VALsplit_string"><span class="keyword">val</span> split_string</span> : <code class="type">string -> char list</code></pre><pre><span id="VALparse_input"><span class="keyword">val</span> parse_input</span> : <code class="type">unit -> int * char list</code></pre><div class="info">
+<code class="code">parse_input ()</code> lit deux lignes sur l'entrée standard du programme. 
+   La première doit comporter un entier, la seconde une chaîne de caractères. 
+   Retourne un couple composÃ© de l'entier de la première ligne et de la liste des caractères de la seconde.
+   Lève l'exception <code class="code">Failure "int_of_string"</code> si la première ligne ne représente pas un entier.<br>
+</div>
+<pre><span id="VALliste_sens_trigo"><span class="keyword">val</span> liste_sens_trigo</span> : <code class="type">int -> char list</code></pre><div class="info">
+<code class="code">liste_sens_trigo ()</code> créer une liste comportant le nombre de 'P' puis 'E' donné en paramètre<br>
+<b>Returns</b> une liste<br>
+</div>
+<pre><span id="VALliste_sens_antitrigo"><span class="keyword">val</span> liste_sens_antitrigo</span> : <code class="type">int -> char list</code></pre><div class="info">
+<code class="code">liste_sens_antitrigo ()</code> créer une liste comportant le nombre de 'N' puis 'E' donné en paramètre<br>
+<b>Returns</b> une liste<br>
+</div>
+<pre><span id="VALcreation_liste"><span class="keyword">val</span> creation_liste</span> : <code class="type">int -> char -> char list</code></pre><div class="info">
+<code class="code">creation_liste()</code> creer la liste associé à la lecture d'un caractère<br>
+<b>Returns</b> liste<br>
+</div>
+<pre><span id="VALlecture_input"><span class="keyword">val</span> lecture_input</span> : <code class="type">char list -> int -> char list list</code></pre><div class="info">
+<code class="code">lecture_input()</code>creer la liste des mouvements pour la partie 1 du projet<br>
+<b>Returns</b> une char list list<br>
+</div>
+<pre><span id="VALlecture"><span class="keyword">val</span> lecture</span> : <code class="type">char list -> <a href="Projet_IPF.html#TYPEantenne">antenne</a> list -> char list list</code></pre><div class="info">
+<code class="code">lecture ()</code> créer la liste de mouvement des antennes en fonction d'une liste de char<br>
+<b>Returns</b> une liste de liste<br>
+</div>
+<pre><span id="VALprint_list"><span class="keyword">val</span> print_list</span> : <code class="type">char list -> unit</code></pre><div class="info">
+<code class="code">print_list()</code> print une liste de char sur la sortie standard<br>
+<b>Returns</b> unit<br>
+</div>
+<pre><span id="VALcompteur_duree"><span class="keyword">val</span> compteur_duree</span> : <code class="type">char list -> int -> int</code></pre><div class="info">
+<code class="code">compteur_duree ()</code> calcul la duree d'envoie d'un message<br>
+<b>Returns</b> un int<br>
+</div>
+<pre><span id="VALlire_entree_option"><span class="keyword">val</span> lire_entree_option</span> : <code class="type">unit -> int</code></pre><pre><span id="VALcat"><span class="keyword">val</span> cat</span> : <code class="type">string -> unit</code></pre><pre><span id="VALmain"><span class="keyword">val</span> main</span> : <code class="type">unit -> unit</code></pre></body></html>

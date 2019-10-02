@@ -1,0 +1,42 @@
+<html><head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Projet_IPF" rel="Chapter" href="Projet_IPF.html"><title>Projet_IPF</title>
+</head>
+<body>
+<code class="code"><span class="keyword">sig</span><br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;distance_espace&nbsp;:&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;distance&nbsp;:&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;distanceAll&nbsp;:&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;distance3&nbsp;:&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;antenne&nbsp;=&nbsp;{&nbsp;num&nbsp;:&nbsp;char&nbsp;list;&nbsp;pos&nbsp;:&nbsp;char;&nbsp;dis&nbsp;:&nbsp;int;&nbsp;}<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;insert_dis&nbsp;:&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;insert_pos&nbsp;:&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;min_antenne&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;min_antenne_liste&nbsp;:&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;set_distance&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;modifier_antenne&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;char&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;modifier_liste&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;ecrire_antenne&nbsp;:&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;init_liste_antenne&nbsp;:&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;split_string&nbsp;:&nbsp;string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;parse_input&nbsp;:&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;*&nbsp;char&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;liste_sens_trigo&nbsp;:&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;liste_sens_antitrigo&nbsp;:&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;creation_liste&nbsp;:&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;lecture_input&nbsp;:&nbsp;char&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;lecture&nbsp;:&nbsp;char&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Projet_IPF</span>.antenne&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;char&nbsp;list&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;print_list&nbsp;:&nbsp;char&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;compteur_duree&nbsp;:&nbsp;char&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;lire_entree_option&nbsp;:&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;cat&nbsp;:&nbsp;string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;main&nbsp;:&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+<span class="keyword">end</span></code></body></html>
