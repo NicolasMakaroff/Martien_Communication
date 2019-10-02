@@ -1,0 +1,4 @@
+Ceci est le fichier d'aide.
+Il faut d'abord rentrer un nombre d'antenne > 1.
+L'objectif de se programme est de convertir en mouvement de roues le message à envoyer aux extra-terrestres.
+Le message doit être écrit en MAJUSCULE.

@@ -1,0 +1,21 @@
+CMO = distance.cmo antenne.cmo lecture.cmo main.cmo
+BIN = lecture_distance
+FLAGS =
+$(BIN) : $(CMO)
+	ocamlc $(FLAGS) -o $@nums.cma $(CMO)
+.SUFFIXES : .mli . ml .cmi .cmo
+.mli.ml :
+	ocamlc $(FLAGS) -c $<
+.ml.cmo :
+	ocamlc $(FLAGS) -c $<
+
+clean :
+	rm -f *.cm[io] *.cmo *~lecture_antenne $(GENERATED)
+
+.depend depend : $(GENERATED)
+	rm -f .depend
+	ocamldep *.ml *.mli >.depend
+include .depend
+
+
+
